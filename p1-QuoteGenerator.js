@@ -1,14 +1,14 @@
 //Variables
 
-let btn = document.querySelector("#new-quote")
-let quote = document.querySelector(".quote")
-let person = document.querySelector(".person")
+let btn = document.querySelector("#new-quote");
+let quote = document.querySelector(".quote");
+let person = document.querySelector(".person");
 
 const quotes = [
-    {
-      quote: "True terror is to wake up one morning and discover that your high school class is running the country.",
-      person: "Kurt Vonnegut"
-    },
+  {
+    quote: "True terror is to wake up one morning and discover that your high school class is running the country.",
+    person: "Kurt Vonnegut"
+  },
     {
       quote: "Always forgive your enemies; nothing annoys them so much.",
       person: "Oscar Wilde"
@@ -67,10 +67,8 @@ const quotes = [
     }
   ];
 
-  btn.addEventListener("click",function(){
-     
-
-    quote.innerText = quotes[random].quote
-    person.innerText = quotes[random].person 
-})
-  
+  btn.addEventListener("click", function() {
+    let random = Math.floor(Math.random() * quotes.length);
+    quote.innerText = quotes[random].quote;
+    person.innerText = quotes[random].person;
+  });

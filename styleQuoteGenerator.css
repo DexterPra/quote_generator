@@ -15,7 +15,6 @@ body{
 }
 
 .container {
-    border: 1px solid wheat;
     width: 550px;
     height: 450px;
 }
